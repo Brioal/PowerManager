@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/conver_back"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:onClick="Recovery"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rec"
+                    android:textAllCaps="false"
+                    android:typeface="sans" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="刷机模式"
+                    android:textColor="@color/colorBlack"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:onClick="FastBoot"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fast"
+                    android:textAllCaps="false"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="引导模式"
+                    android:textColor="@color/colorBlack"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:onClick="ShutDown"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shut"
+                    android:textAllCaps="false"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorTrans"
+                    android:onClick="ShutDown"
+                    android:text="关机"
+                    android:textColor="@color/colorBlack"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:onClick="Reboot"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/reboot"
+                    android:textAllCaps="false"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="重启"
+                    android:textColor="@color/colorBlack"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:onClick="FastReboot"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fastboot"
+                    android:textAllCaps="false"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="快速重启"
+                    android:textColor="@color/colorBlack"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
