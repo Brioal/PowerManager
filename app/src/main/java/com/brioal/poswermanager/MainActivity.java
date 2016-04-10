@@ -13,21 +13,28 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setFinishOnTouchOutside(true);
         setContentView(R.layout.activity_main);
-        if (!ShellUtils.checkRootPermission()) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("本软件只能在获取Root权限之后使用,确认退出吗?");
-            builder.setTitle("未获取Root权限");
-            builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    MainActivity.this.finish();
+        new Thread(){
+            @Override
+            public void run() {
+                if (!ShellUtils.checkRootPermission()) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setMessage("本软件只能在获取Root权限之后使用,确认退出吗?");
+                    builder.setTitle("未获取Root权限");
+                    builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            MainActivity.this.finish();
+                        }
+
+
+                    });
+                    builder.create().show();
                 }
 
+            }
+        }.start();
 
-            });
-            builder.create().show();
-        }
     }
 
     //关机
